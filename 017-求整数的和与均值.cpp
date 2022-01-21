@@ -19,17 +19,17 @@
 */
 
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 int main(){
-    int n,x;
-    double sum;
-    do {
-        
-    }
-    for ( int i=0; i<n; i++ ){
-        cin >>x;
+    int n,x,sum,cnt;
+    scanf("%d", &n);
+    cnt=n;
+    while ( cnt>0 ){
+    scanf("%d", &x);
         sum+=x;
+        cnt--;
     }
-    cout <<(double)sum/n;
+    printf("%d %.5f\n", sum, double(sum)/n );
     return 0;
 }
