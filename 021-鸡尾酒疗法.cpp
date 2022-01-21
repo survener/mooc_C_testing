@@ -35,9 +35,9 @@ int main()
     for( int i=1; i<n; i++ ){
         cin >>a >>b;
         y=double(b)/a;
-        if( x-y>0.05 && x-y>0 ){
+        if( x-y>0.05 ){
             cout <<"worse" <<endl;
-        }else if( y-x>0.05 && y-x>0 ){
+        }else if( y-x>0.05 ){
             cout <<"better" <<endl;
         }else {
             cout <<"same" <<endl;}
