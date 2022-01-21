@@ -21,15 +21,14 @@
 #include <iostream>
 #include <cstdio>
 using namespace std;
-int main(){
-    int n,x,sum=0,cnt;
+int main()
+{
+    int n,x,sum=0;
     scanf("%d", &n);
-    cnt=n;
-    while ( cnt>0 ){
-    scanf("%d", &x);
+    for( int cnt=0; cnt<n; cnt++){
+        scanf("%d", &x);
         sum+=x;
-        cnt--;
     }
-    printf("%d %.5f\n", sum, double(sum)/n );
+    printf("%d %.5f", sum, double(sum)/n);
     return 0;
 }
