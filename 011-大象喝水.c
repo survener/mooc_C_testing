@@ -20,10 +20,11 @@
 #include <stdio.h>
 int main(){
     int h,r,sum;
-    int x,y;
+    double x;
     scanf("%d %d", &h, &r);
     x= 20000/(3.14159*h*r*r);
-    if ( (int)x==x){
-        printf("%d\n", (int)x+1);
+    int y= x;
+    if ( y!=x){
+        printf("%d\n", y+1);
     }
 }
